@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../css/javascript2.css" rel="stylesheet" type="text/css">
+<link href="../css/nav.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Cabin:400,700|Libre+Baskerville|Lora|Muli:800|PT+Sans:700|Rubik:700" rel="stylesheet">
+<title>Javascript II</title>
+</head>
+
+<body>
+	<header>
+		<div id="logo">
+			<a href="../index.html">Kathleen Capiral</a>
+		</div>
+		<input id="burger" type="checkbox" />
+		<label for="burger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</label>
+		<nav>    
+		  <ul>
+			<li><a href="readings.html">Readings</a></li>
+			<li><a href="assignments.html">Assignments</a></li>
+			<li><a href="html/midterm-final.html">Midterm & Final</a></li>
+		  </ul>  
+		</nav>
+	</header>
+
+	<section id="mainSection" style="padding-top: 150px">
+		<div class="color">Pick a color!</div>
+		<input id="colorInput" type="text" name="color">
+		<div class="fruit">Pick a fruit!</div>
+		<input id="fruitInput" type="text" name="fruit">
+		<button type="button" onclick="createText()">Submit</button>
+		<div id="textBox" class="textbox"></div>
+	</section>
+
+	<script>
+		function createText() {
+			var color = document.getElementById("colorInput").value;
+			var fruit = document.getElementById("fruitInput").value;
+			
+			document.getElementById("textBox").innerHTML = "I like " + color + " " + fruit + ".";
+		}
+	</script>
+</body>
+</html>

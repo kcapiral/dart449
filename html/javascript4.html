@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../css/javascript4.css" rel="stylesheet" type="text/css">
+<link href="../css/nav.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Cabin:400,700|Libre+Baskerville|Lora|Muli:800|PT+Sans:700|Rubik:700" rel="stylesheet">
+<title>Javascript IIII</title>
+</head>
+
+<body>
+	<header>
+		<div id="logo">
+			<a href="../index.html">Kathleen Capiral</a>
+		</div>
+		<input id="burger" type="checkbox" />
+		<label for="burger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</label>
+		<nav>    
+		  <ul>
+			<li><a href="readings.html">Readings</a></li>
+			<li><a href="assignments.html">Assignments</a></li>
+			<li><a href="html/midterm-final.html">Midterm & Final</a></li>
+		  </ul>  
+		</nav>
+	</header>
+	
+<section id="mainSection">
+	<section id="shapeSection" style="padding-top: 150px">
+		<svg class="starButton" onclick="increasePoint(this)" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215.11 204.58">
+			<title>star</title>
+			<polygon points="107.56 169.07 41.75 203.67 54.31 130.39 1.07 78.49 74.65 67.8 107.56 1.13 140.46 67.8 214.04 78.49 160.8 130.39 173.36 203.67 107.56 169.07"/>
+		</svg>
+		<svg class="starButton" onclick="increasePoint(this)" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215.11 204.58">
+			<defs>
+			</defs>
+			<title>star</title>
+			<polygon points="107.56 169.07 41.75 203.67 54.31 130.39 1.07 78.49 74.65 67.8 107.56 1.13 140.46 67.8 214.04 78.49 160.8 130.39 173.36 203.67 107.56 169.07"/>
+		</svg>
+		<svg class="starButton" onclick="increasePoint(this)" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215.11 204.58">
+			<defs>
+			</defs>
+			<title>star</title>
+			<polygon points="107.56 169.07 41.75 203.67 54.31 130.39 1.07 78.49 74.65 67.8 107.56 1.13 140.46 67.8 214.04 78.49 160.8 130.39 173.36 203.67 107.56 169.07"/>
+		</svg>
+		<svg class="starButton" onclick="decreasePoint(this)" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215.11 204.58">
+			<defs>
+			</defs>
+			<title>star</title>
+			<polygon points="107.56 169.07 41.75 203.67 54.31 130.39 1.07 78.49 74.65 67.8 107.56 1.13 140.46 67.8 214.04 78.49 160.8 130.39 173.36 203.67 107.56 169.07"/>
+		</svg>
+		<svg class="starButton" onclick="increasePoint(this)" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215.11 204.58">
+			<defs>
+			</defs>
+			<title>star</title>
+			<polygon points="107.56 169.07 41.75 203.67 54.31 130.39 1.07 78.49 74.65 67.8 107.56 1.13 140.46 67.8 214.04 78.49 160.8 130.39 173.36 203.67 107.56 169.07"/>
+		</svg>
+		<svg class="starButton" onclick="increasePoint(this)" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215.11 204.58">
+			<defs>
+			</defs>
+			<title>star</title>
+			<polygon points="107.56 169.07 41.75 203.67 54.31 130.39 1.07 78.49 74.65 67.8 107.56 1.13 140.46 67.8 214.04 78.49 160.8 130.39 173.36 203.67 107.56 169.07"/>
+		</svg>
+		<svg class="starButton" onclick="decreasePoint(this)" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215.11 204.58">
+			<defs>
+			</defs>
+			<title>star</title>
+			<polygon points="107.56 169.07 41.75 203.67 54.31 130.39 1.07 78.49 74.65 67.8 107.56 1.13 140.46 67.8 214.04 78.49 160.8 130.39 173.36 203.67 107.56 169.07"/>
+		</svg>
+		<svg class="starButton" onclick="increasePoint(this)" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215.11 204.58">
+			<defs>
+			</defs>
+			<title>star</title>
+			<polygon points="107.56 169.07 41.75 203.67 54.31 130.39 1.07 78.49 74.65 67.8 107.56 1.13 140.46 67.8 214.04 78.49 160.8 130.39 173.36 203.67 107.56 169.07"/>
+		</svg>
+	</section>
+	<section id="textSection">
+		<div id="pointBox">You have: <span id="pointValue">0</span></div>
+		<div id="winMessage">You Win!</div>
+	</section>	
+</section>	
+	<script>
+		var point = 0;
+		
+		function increasePoint(element) {
+			if (point < 100) {
+				point = point + 25;
+			}
+			
+			document.getElementById("pointValue").innerHTML = point;
+			
+			if (point == 100) {
+				document.getElementById("winMessage").classList.toggle("display");
+			}
+			
+			myAnim(element);
+		}
+		
+		function decreasePoint(element) {
+			if (point > 0 ) {
+				point = point - 25;	
+			}
+			document.getElementById("pointValue").innerHTML = point;
+			
+			myAnim(element);
+		}
+		
+		function myAnim(x) {
+			x.classList.toggle("animate");
+		}
+	</script>
+</body>
+</html>

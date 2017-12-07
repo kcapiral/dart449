@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+	background-color: #E1EFF7;
+}
+
+header {
+	z-index: 100;
+	width: 100%;
+	height: 75px;
+	position: fixed;
+	background: #E1EFF7;
+}
+
+.article {
+	color: #95989A;
+	font-size: 30px;
+	font-family: 'Libre Baskerville', serif;
+	height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	text-align: left;
+	padding: 0 50px;
+}
+
+a:link {
+	color: #95989A;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #95989A;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #00A2FF;
+}
+
+a:active {
+	color: #95989A;
+}
+
+@media only screen and (min-width: 1025px) {
+	wrapper {padding: 0 200px;} .article {font-size: 75px;}
+}

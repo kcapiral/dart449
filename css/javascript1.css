@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+}
+
+body, html {
+	background-color: #E1EFF7;
+}
+
+header {
+	z-index: 100;
+	width: 100%;
+	height: 75px;
+	position: fixed;
+	background: #E1EFF7;
+}
+
+h1 {
+	font-family: 'Libre Baskerville', serif;
+	color: #00A2FF;
+	display: block;
+}
+
+#Layer_1 {
+	width: 50vw;
+	top: 75px;
+}
+
+.cls-1{
+	fill:none;
+}
+.cls-2{
+	clip-path:url(#clip-path);
+}
+.cls-3{
+	fill:#fcc;
+}
+.cls-4{
+	fill:#cff;
+}
+.cls-5{
+	fill:#f0f0f0;
+}
+
+.roller {
+	transition: all .5s;
+}
+
+.roller:hover {
+	fill:#00A2FF;
+}
+
+section {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	transition: all .5s;
+}
+
+aside {
+	width: 100%;
+	text-align: center;
+}
+
+.aside2 {
+	padding: 50px;
+}
+
+a:link {
+	color: #95989A;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #95989A;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #00A2FF;
+}
+
+a:active {
+	color: #95989A;
+}
+
+@media only screen and (min-width: 481px) {
+	section {flex-wrap: nowrap;}
+}
+
+@media only screen and (min-width: 1025px) {
+	#Layer_1 {width: 25vw;}
+}

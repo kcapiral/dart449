@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+}
+
+body, html {
+	background-color: #E1EFF7;
+}
+
+header {
+	z-index: 100;
+	width: 100%;
+	height: 75px;
+	position: fixed;
+	background: #E1EFF7;
+}
+
+#mainSection {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+.color {
+	font-family: 'Libre Baskerville', serif;
+	color: #00A2FF;
+	font-size: 25px;
+	padding: 25px;
+}
+
+.fruit {
+	font-family: 'Libre Baskerville', serif;
+	color: #00A2FF;
+	font-size: 25px;
+	padding: 25px;
+}
+
+button {
+	font-family: 'Libre Baskerville', serif;
+	font-size: 15px;
+	margin: 25px;
+	padding: 25px;
+	width: 150px;
+	background-color: #95989A;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #00A2FF;
+    color: white;	
+}
+
+#textBox {
+	font-family: 'Libre Baskerville', serif;
+	color: #00A2FF;
+	font-size: 100px;
+}
+
+a:link {
+	color: #95989A;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #95989A;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #00A2FF;
+}
+
+a:active {
+	color: #95989A;
+}
+
+@media only screen and (min-width: 481px) {
+	section {flex-wrap: nowrap;}
+}
+
+@media only screen and (min-width: 1025px) {
+	.starButton {width: 25vw;}
+}
